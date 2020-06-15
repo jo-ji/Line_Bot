@@ -18,10 +18,12 @@ import os
 app = Flask(__name__)
 
 #環境変数からLINE Access Tokenを設定
-LINE_CHANNEL_ACCESS_TOKEN = os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
+LINE_CHANNEL_ACCESS_TOKEN = "88VQUMuJuOxGaAfMcYoF5Ij5iayV2DinwUoHGRTOYoNBCfM0GyxWycPCOynXivpm5qZJlzMNGkDHPTKEufFeEfjx8bKHcLGtiPQsu+HFC66kgRrQ2HtfTm93Xq6auPVAu6eO3te2eOxM/xyPAn7HJwdB04t89/1O/w1cDnyilFU="
+#os.environ["LINE_CHANNEL_ACCESS_TOKEN"]
 
 #環境変数からLINE Channel Secretを設定
-LINE_CHANNEL_SECRET = os.environ["LINE_CHANNEL_SECRET"]
+LINE_CHANNEL_SECRET = "5d57fefaf08aaaa8e67b9ce75c628cef"
+#os.environ["LINE_CHANNEL_SECRET"]
 
 
 line_bot_api = LineBotApi(LINE_CHANNEL_ACCESS_TOKEN)
